@@ -91,14 +91,16 @@ import { RouterLink, RouterView } from 'vue-router'
 .nav {
   display: flex;
   flex-wrap: wrap;
-  gap: 12px;
+  gap: 10px;
+  justify-content: flex-end;
+  flex: 1 1 420px;
 }
 
 .nav-link {
-  padding: 8px 14px;
+  padding: 6px 12px;
   border-radius: 999px;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 13px;
   text-transform: uppercase;
   letter-spacing: 0.08em;
   color: #e9f1ff;
@@ -207,6 +209,19 @@ import { RouterLink, RouterView } from 'vue-router'
 
   .nav {
     width: 100%;
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 540px) {
+  .app-header {
+    padding-top: 22px;
+    padding-bottom: 22px;
+  }
+
+  .nav-link {
+    font-size: 12px;
+    padding: 6px 10px;
   }
 }
 </style>
