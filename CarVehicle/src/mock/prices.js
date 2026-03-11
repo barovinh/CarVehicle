@@ -1,3 +1,16 @@
+// Interior image sequences for the 360° interior viewer
+// Replace with actual equirectangular panoramic images for best results
+const CITY_INTERIOR = [
+    'https://hondaotomydinh.vn/wp-content/uploads/2023/06/noi-that-city-1.jpg',
+    'https://hondaotomydinh.vn/wp-content/uploads/2023/06/vo-lang-city-3.jpg',
+    'https://hondaotomydinh.vn/wp-content/uploads/2023/06/man-hinh-city-2.jpg',
+    'https://hondaotomydinh.vn/wp-content/uploads/2023/06/cum-dong-ho-city.jpg',
+    'https://hondaotomydinh.vn/wp-content/uploads/2023/06/khong-gian-city.jpg',
+    'https://hondaotomydinh.vn/wp-content/uploads/2023/06/hang-ghe-sau-city.jpg',
+    'https://hondaotomydinh.vn/wp-content/uploads/2023/06/can-so-city-1.jpg',
+    'https://hondaotomydinh.vn/wp-content/uploads/2023/06/dieu-hoa-city-3.jpg',
+]
+
 const prices = [
     {
         id: 'city-g',
@@ -6,7 +19,10 @@ const prices = [
         version: 'G',
         price: 559000000,
         image: 'https://cdn.honda.com.vn/automobile-versions/Image360/October2024/1729560073/33.png',
-        description: 'Dòng sedan nhỏ gọn, tiết kiệm nhiên liệu, phù hợp di chuyển đô thị hàng ngày.'
+        description: 'Dòng sedan nhỏ gọn, tiết kiệm nhiên liệu, phù hợp di chuyển đô thị hàng ngày.',
+        interiorImages: CITY_INTERIOR,
+        hoodImage: 'https://hondaotomydinh.vn/wp-content/uploads/2017/06/khoang-dong-co-honda-city-2024.webp',
+        trunkImage: 'https://hondaotomydinh.vn/wp-content/uploads/2023/06/cop-xe-city.jpg',
     },
     {
         id: 'city-l',
@@ -15,7 +31,10 @@ const prices = [
         version: 'L',
         price: 589000000,
         image: 'https://cdn.honda.com.vn/automobile-versions/Image360/October2024/1729608819/2.png',
-        description: 'Phiên bản cân bằng trang bị và giá, phù hợp gia đình trẻ năng động.'
+        description: 'Phiên bản cân bằng trang bị và giá, phù hợp gia đình trẻ năng động.',
+        interiorImages: CITY_INTERIOR,
+        hoodImage: 'https://hondaotomydinh.vn/wp-content/uploads/2017/06/khoang-dong-co-honda-city-2024.webp',
+        trunkImage: 'https://hondaotomydinh.vn/wp-content/uploads/2023/06/cop-xe-city.jpg',
     },
     {
         id: 'city-rs',
@@ -24,7 +43,10 @@ const prices = [
         version: 'RS',
         price: 609000000,
         image: 'https://cdn.honda.com.vn/automobile-versions/Image360/October2024/1729608819/2.png',
-        description: 'Phong cách thể thao, ngoại thất nổi bật, nội thất hiện đại tinh tế.'
+        description: 'Phong cách thể thao, ngoại thất nổi bật, nội thất hiện đại tinh tế.',
+        interiorImages: CITY_INTERIOR,
+        hoodImage: 'https://hondaotomydinh.vn/wp-content/uploads/2017/06/khoang-dong-co-honda-city-2024.webp',
+        trunkImage: 'https://hondaotomydinh.vn/wp-content/uploads/2023/06/cop-xe-city.jpg',
     },
     {
         id: 'civic-g',
