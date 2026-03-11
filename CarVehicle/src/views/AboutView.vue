@@ -3,23 +3,23 @@
 <template>
   <section class="page">
     <header class="page-hero">
-      <p class="eyebrow">Gioi thieu</p>
-      <h1>Ve CarVehicle</h1>
-      <p class="lead">Thuong hieu chuyen ve xe, dich vu, va trai nghiem.</p>
+      <p class="eyebrow">{{ $t('about.eyebrow') }}</p>
+      <h1>{{ $t('about.title') }}</h1>
+      <p class="lead">{{ $t('about.lead') }}</p>
     </header>
 
     <div class="page-grid">
       <article class="card">
-        <h2>Tam nhin</h2>
-        <p>Phat trien he sinh thai xe thong minh va ben vung.</p>
+        <h2>{{ $t('about.cards.vision.title') }}</h2>
+        <p>{{ $t('about.cards.vision.body') }}</p>
       </article>
       <article class="card">
-        <h2>Gia tri cot loi</h2>
-        <p>Minh bach, tan tam, va toi uu trai nghiem.</p>
+        <h2>{{ $t('about.cards.values.title') }}</h2>
+        <p>{{ $t('about.cards.values.body') }}</p>
       </article>
       <article class="card">
-        <h2>Hanh trinh</h2>
-        <p>Mo ta cot moc va nhung thanh tuu noi bat.</p>
+        <h2>{{ $t('about.cards.journey.title') }}</h2>
+        <p>{{ $t('about.cards.journey.body') }}</p>
       </article>
     </div>
   </section>

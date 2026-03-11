@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
+  scrollBehavior: () => false,
   routes: [
     {
       path: '/',
@@ -22,6 +23,11 @@ const router = createRouter({
       path: '/lien-he',
       name: 'contact',
       component: () => import('../views/ContactView.vue'),
+    },
+    {
+      path: '/san-pham/:id',
+      name: 'product-detail',
+      component: () => import('../views/ProductDetailView.vue'),
     },
   ],
 })

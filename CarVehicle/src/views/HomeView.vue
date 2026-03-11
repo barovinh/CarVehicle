@@ -3,27 +3,29 @@
 <template>
   <section class="page">
     <header class="page-hero">
-      <p class="eyebrow">Trang Chu</p>
-      <h1>CarVehicle</h1>
-      <p class="lead">Mo ta ngan gon cho website xe va dich vu.</p>
+      <p class="eyebrow">{{ $t('home.eyebrow') }}</p>
+      <h1>{{ $t('home.title') }}</h1>
+      <p class="lead">{{ $t('home.lead') }}</p>
       <div class="hero-actions">
-        <RouterLink class="btn primary" to="/ds-san-pham">Xem san pham</RouterLink>
-        <RouterLink class="btn ghost" to="/lien-he">Lien he</RouterLink>
+        <RouterLink class="btn primary" to="/ds-san-pham">{{
+          $t('home.actions.products')
+        }}</RouterLink>
+        <RouterLink class="btn ghost" to="/lien-he">{{ $t('home.actions.contact') }}</RouterLink>
       </div>
     </header>
 
     <div class="page-grid">
       <article class="card">
-        <h2>Danh muc noi bat</h2>
-        <p>Trinh bay cac dong xe va phu kien co san.</p>
+        <h2>{{ $t('home.cards.highlight.title') }}</h2>
+        <p>{{ $t('home.cards.highlight.body') }}</p>
       </article>
       <article class="card">
-        <h2>Dich vu</h2>
-        <p>Tu van mua xe, bao duong dinh ky, tra gop.</p>
+        <h2>{{ $t('home.cards.services.title') }}</h2>
+        <p>{{ $t('home.cards.services.body') }}</p>
       </article>
       <article class="card">
-        <h2>Khuyen mai</h2>
-        <p>Cap nhat cac uu dai trong thang va su kien.</p>
+        <h2>{{ $t('home.cards.promo.title') }}</h2>
+        <p>{{ $t('home.cards.promo.body') }}</p>
       </article>
     </div>
   </section>

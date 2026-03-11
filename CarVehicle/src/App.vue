@@ -1,9 +1,14 @@
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
+import { ref } from 'vue'
+import { RouterLink, RouterView, useRouter } from 'vue-router'
+
+const appShellRef = ref(null)
+const router = useRouter()
+router.afterEach(() => appShellRef.value?.scrollTo({ top: 0, behavior: 'instant' }))
 </script>
 
 <template>
-  <div class="app-shell">
+  <div class="app-shell" ref="appShellRef">
     <header class="app-header">
       <div class="brand">
         <span class="brand-mark"></span>
@@ -40,19 +45,50 @@ import { RouterLink, RouterView } from 'vue-router'
   color: #e9f1ff;
 }
 
+:global(html),
+:global(body) {
+  height: 100%;
+  overflow: hidden;
+  margin: 0;
+}
+
 .app-shell {
   min-height: 100vh;
+  height: 100vh;
+  overflow-y: auto;
   display: flex;
   flex-direction: column;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(31, 111, 235, 0.55) rgba(8, 12, 18, 0.5);
+}
+
+.app-shell::-webkit-scrollbar {
+  width: 6px;
+}
+
+.app-shell::-webkit-scrollbar-track {
+  background: rgba(8, 12, 18, 0.5);
+}
+
+.app-shell::-webkit-scrollbar-thumb {
+  background: rgba(31, 111, 235, 0.5);
+  border-radius: 3px;
+}
+
+.app-shell::-webkit-scrollbar-thumb:hover {
+  background: rgba(31, 111, 235, 0.85);
 }
 
 .app-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   gap: 16px;
-  padding: 28px 40px;
+  padding: 10px 40px;
   background: rgba(10, 14, 20, 0.82);
   backdrop-filter: blur(8px);
   border-bottom: 1px solid rgba(130, 166, 220, 0.2);
@@ -118,7 +154,7 @@ import { RouterLink, RouterView } from 'vue-router'
 
 .app-main {
   flex: 1;
-  padding: 36px 40px 64px;
+  padding: 36px 60px 30px;
 }
 
 .app-footer {
@@ -131,11 +167,11 @@ import { RouterLink, RouterView } from 'vue-router'
 }
 
 :global(.page) {
-  max-width: 1120px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   gap: 32px;
+  width: 100%;
 }
 
 :global(.page-hero) {
