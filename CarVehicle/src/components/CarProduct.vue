@@ -51,8 +51,8 @@ const emit = defineEmits(['select'])
   gap: 20px;
   padding: 20px;
   border-radius: 18px;
-  border: 1px solid rgba(127, 162, 214, 0.18);
-  background: rgba(12, 18, 26, 0.7);
+  border: 1px solid var(--border);
+  background: var(--panel);
   box-shadow: 0 10px 20px rgba(4, 8, 14, 0.45);
   align-items: center;
   min-height: 220px;
@@ -67,7 +67,7 @@ const emit = defineEmits(['select'])
 }
 
 .car-product.is-active {
-  border-color: #1f6feb;
+  border-color: var(--primary);
   box-shadow:
     0 0 0 2px rgba(31, 111, 235, 0.3),
     0 10px 20px rgba(4, 8, 14, 0.45);
@@ -78,8 +78,8 @@ const emit = defineEmits(['select'])
   height: 100%;
   border-radius: 14px;
   overflow: hidden;
-  background: rgba(15, 22, 32, 0.7);
-  border: 1px solid rgba(127, 162, 214, 0.18);
+  background: var(--panel-strong);
+  border: 1px solid var(--border);
 }
 
 .car-media img {
@@ -100,7 +100,7 @@ const emit = defineEmits(['select'])
   font-size: 12px;
   letter-spacing: 0.24em;
   text-transform: uppercase;
-  color: #7fa2d6;
+  color: var(--subtle);
 }
 
 .car-title {
@@ -110,13 +110,13 @@ const emit = defineEmits(['select'])
 
 .car-description {
   margin: 0;
-  color: #c2d1ea;
+  color: var(--muted);
 }
 
 .car-price {
   font-size: 18px;
   font-weight: 600;
-  color: #00d4ff;
+  color: var(--accent);
 }
 
 .car-footer {
@@ -130,9 +130,9 @@ const emit = defineEmits(['select'])
 .btn-detail {
   padding: 7px 16px;
   border-radius: 999px;
-  border: 1px solid rgba(127, 162, 214, 0.4);
+  border: 1px solid var(--border-3);
   background: transparent;
-  color: #e9f1ff;
+  color: var(--text);
   font-size: 12px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -145,8 +145,8 @@ const emit = defineEmits(['select'])
 }
 
 .btn-detail:hover {
-  background: #1f6feb;
-  border-color: #1f6feb;
+  background: var(--primary);
+  border-color: var(--primary);
   color: #fff;
 }
 

@@ -148,8 +148,8 @@ function handleSubmit() {
 }
 
 .dialog-box {
-  background: #0d1520;
-  border: 1px solid rgba(127, 162, 214, 0.3);
+  background: var(--panel);
+  border: 1px solid var(--border-2);
   border-radius: 20px;
   box-shadow: 0 30px 80px rgba(4, 8, 14, 0.7);
   padding: 32px;
@@ -167,13 +167,13 @@ function handleSubmit() {
 .dialog-title {
   margin: 0;
   font-size: 20px;
-  color: #e9f1ff;
+  color: var(--text);
 }
 
 .dialog-close {
   background: none;
   border: none;
-  color: #7fa2d6;
+  color: var(--subtle);
   font-size: 18px;
   cursor: pointer;
   padding: 4px 8px;
@@ -184,7 +184,7 @@ function handleSubmit() {
 }
 
 .dialog-close:hover {
-  color: #e9f1ff;
+  color: var(--text);
   background: rgba(127, 162, 214, 0.12);
 }
 
@@ -202,20 +202,20 @@ function handleSubmit() {
 
 .form-label {
   font-size: 13px;
-  color: #c2d1ea;
+  color: var(--muted);
 }
 
 .required {
-  color: #f87171;
+  color: var(--danger);
 }
 
 .form-input {
-  background: rgba(15, 22, 32, 0.8);
-  border: 1px solid rgba(127, 162, 214, 0.25);
+  background: var(--panel-strong);
+  border: 1px solid var(--border-2);
   border-radius: 10px;
   padding: 10px 14px;
   font-size: 14px;
-  color: #e9f1ff;
+  color: var(--text);
   font-family: inherit;
   outline: none;
   transition: border-color 0.2s;
@@ -226,22 +226,22 @@ function handleSubmit() {
 }
 
 .form-input:focus {
-  border-color: #1f6feb;
+  border-color: var(--primary);
 }
 
 .form-input.is-readonly {
-  color: #7fa2d6;
+  color: var(--subtle);
   cursor: default;
 }
 
 .form-input.is-error {
-  border-color: #f87171;
+  border-color: var(--danger);
 }
 
 .form-error {
   margin: 0;
   font-size: 12px;
-  color: #f87171;
+  color: var(--danger);
 }
 
 .form-actions {
@@ -253,11 +253,11 @@ function handleSubmit() {
 
 .btn-cancel {
   background: transparent;
-  border: 1px solid rgba(127, 162, 214, 0.3);
+  border: 1px solid var(--border-2);
   border-radius: 10px;
   padding: 10px 20px;
   font-size: 14px;
-  color: #c2d1ea;
+  color: var(--muted);
   cursor: pointer;
   font-family: inherit;
   transition:
@@ -267,11 +267,11 @@ function handleSubmit() {
 
 .btn-cancel:hover {
   border-color: rgba(127, 162, 214, 0.6);
-  color: #e9f1ff;
+  color: var(--text);
 }
 
 .btn-confirm {
-  background: #1f6feb;
+  background: var(--primary);
   border: none;
   border-radius: 10px;
   padding: 10px 22px;
@@ -302,17 +302,17 @@ function handleSubmit() {
   height: 52px;
   border-radius: 50%;
   background: rgba(31, 111, 235, 0.15);
-  border: 2px solid #1f6feb;
+  border: 2px solid var(--primary);
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 22px;
-  color: #00d4ff;
+  color: var(--accent);
 }
 
 .dialog-success p {
   margin: 0;
-  color: #c2d1ea;
+  color: var(--muted);
   font-size: 15px;
 }
 

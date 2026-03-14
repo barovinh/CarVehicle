@@ -146,12 +146,12 @@ const specs = [
 
 <style scoped>
 .state-msg {
-  color: #7fa2d6;
+  color: var(--subtle);
   font-size: 16px;
 }
 
 .state-msg.error {
-  color: #f87171;
+  color: var(--danger);
 }
 
 /* ---- BREADCRUMB ---- */
@@ -160,17 +160,17 @@ const specs = [
   align-items: center;
   gap: 8px;
   font-size: 13px;
-  color: #7fa2d6;
+  color: var(--subtle);
 }
 
 .breadcrumb a {
-  color: #7fa2d6;
+  color: var(--subtle);
   text-decoration: none;
   transition: color 0.2s;
 }
 
 .breadcrumb a:hover {
-  color: #e9f1ff;
+  color: var(--text);
 }
 
 .sep {
@@ -186,7 +186,7 @@ const specs = [
   padding: 32px;
   border-radius: 24px;
   background: linear-gradient(135deg, rgba(24, 34, 50, 0.9), rgba(9, 13, 19, 0.55));
-  border: 1px solid rgba(127, 162, 214, 0.2);
+  border: 1px solid var(--border);
   box-shadow: 0 20px 50px rgba(4, 8, 14, 0.5);
 }
 
@@ -203,7 +203,7 @@ const specs = [
   font-size: 12px;
   letter-spacing: 0.24em;
   text-transform: uppercase;
-  color: #7fa2d6;
+  color: var(--subtle);
 }
 
 .detail-name {
@@ -227,7 +227,7 @@ const specs = [
 .detail-description {
   margin: 0 0 24px;
   font-size: 15px;
-  color: #c2d1ea;
+  color: var(--muted);
   line-height: 1.7;
 }
 
@@ -246,13 +246,13 @@ const specs = [
   font-size: 12px;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: #7fa2d6;
+  color: var(--subtle);
 }
 
 .price-value {
   font-size: 30px;
   font-weight: 700;
-  color: #00d4ff;
+  color: var(--accent);
   line-height: 1;
 }
 

@@ -4,7 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "concurrently -k \"vite\" \"php backend/artisan serve --host=127.0.0.1 --port=8000\"",
     "build": "vite build",
     "preview": "vite preview",
     "format": "prettier --write --experimental-cli src/"
@@ -18,6 +18,7 @@
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^6.0.4",
+    "concurrently": "^9.2.1",
     "prettier": "3.8.1",
     "vite": "beta",
     "vite-plugin-vue-devtools": "^8.0.6"

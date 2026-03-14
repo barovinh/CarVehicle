@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900" role="img" aria-label="CarVehicle hero">
+  <defs>
+    <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1f6feb" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#00d4ff" stop-opacity="0.18"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="70%" cy="30%" r="60%">
+      <stop offset="0" stop-color="#00d4ff" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#00d4ff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1400" height="900" fill="#0a0f14"/>
+  <rect width="1400" height="900" fill="url(#g1)"/>
+  <rect width="1400" height="900" fill="url(#glow)"/>
+
+  <!-- abstract road lines -->
+  <path d="M0 700 C 420 560, 860 860, 1400 650" fill="none" stroke="#e9f1ff" stroke-opacity="0.08" stroke-width="22" stroke-linecap="round"/>
+  <path d="M0 760 C 460 610, 900 900, 1400 720" fill="none" stroke="#e9f1ff" stroke-opacity="0.06" stroke-width="14" stroke-linecap="round"/>
+
+  <!-- car outline -->
+  <path d="M420 560 C470 490, 600 460, 710 460 C860 460, 980 500, 1060 560 C1090 585, 1105 625, 1095 660 C1070 745, 920 760, 710 760 C500 760, 390 730, 380 660 C375 625, 390 590, 420 560 Z" fill="#0f141b" opacity="0.78"/>
+  <path d="M530 560 C580 510, 650 495, 720 495 C825 495, 910 520, 980 565" fill="none" stroke="#e9f1ff" stroke-opacity="0.22" stroke-width="10" stroke-linecap="round"/>
+
+  <circle cx="540" cy="730" r="58" fill="#0a0f14" opacity="0.9"/>
+  <circle cx="540" cy="730" r="34" fill="#e9f1ff" opacity="0.12"/>
+  <circle cx="950" cy="730" r="58" fill="#0a0f14" opacity="0.9"/>
+  <circle cx="950" cy="730" r="34" fill="#e9f1ff" opacity="0.12"/>
+
+  <!-- label -->
+  <text x="90" y="120" font-family="Segoe UI, Arial, sans-serif" font-size="48" fill="#e9f1ff" opacity="0.9" letter-spacing="3">CARVEHICLE</text>
+  <text x="90" y="170" font-family="Segoe UI, Arial, sans-serif" font-size="20" fill="#e9f1ff" opacity="0.7" letter-spacing="2">Showcase • Service • Consulting</text>
+</svg>

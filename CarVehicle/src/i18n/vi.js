@@ -20,6 +20,47 @@ const messages = {
                 title: 'Khuyến mãi',
                 body: 'ập nhật các ưu đãi trong tháng và sự kiện.'
             }
+        },
+        featured: {
+            eyebrow: 'Nổi bật',
+            title: 'Sản phẩm nổi bật',
+            lead: 'Danh sách được chọn lựa từ API để dễ cập nhật theo chiến dịch trong tháng/năm.',
+            updatedAt: 'Cập nhật lúc',
+            actions: {
+                all: 'Xem tất cả sản phẩm'
+            },
+            states: {
+                loading: 'Đang tải sản phẩm nổi bật...',
+                error: 'Không thể tải danh sách nổi bật. Vui lòng thử lại.',
+                empty: 'Chưa có sản phẩm nổi bật.'
+            }
+        },
+        aboutSection: {
+            eyebrow: 'Giới thiệu',
+            title: 'Về website',
+            lead: 'Thông tin ngắn gọn về dịch vụ, tư vấn và định hướng phát triển.',
+            cards: {
+                intro: {
+                    title: 'Giới thiệu',
+                    body: 'CarVehicle là nền tảng giới thiệu sản phẩm xe, dịch vụ hậu mãi và trải nghiệm khách hàng.'
+                },
+                services: {
+                    title: 'Phục vụ',
+                    body: 'Hỗ trợ từ tư vấn chọn xe đến đăng ký lái thử, báo giá và chăm sóc sau bán.'
+                },
+                consulting: {
+                    title: 'Tư vấn',
+                    body: 'Gợi ý phiên bản phù hợp ngân sách, nhu cầu gia đình/công việc và lộ trình sử dụng.'
+                },
+                vision: {
+                    title: 'Tầm nhìn',
+                    body: 'Xây dựng trải nghiệm mua xe minh bạch, hiện đại và cá nhân hoá theo từng khách hàng.'
+                },
+                mission: {
+                    title: 'Sứ mệnh',
+                    body: 'Kết nối khách hàng với sản phẩm phù hợp, tối ưu hành trình sở hữu xe từ quan tâm đến sử dụng.'
+                }
+            }
         }
     },
     about: {
@@ -107,6 +148,29 @@ const messages = {
                 title: 'Phụ kiện',
                 body: 'Gói phụ kiện và nâng cấp tùy chỉnh.'
             }
+        }
+    },
+    events: {
+        eyebrow: 'Sự kiện',
+        title: 'Chương trình & ra mắt sản phẩm',
+        lead: 'Cập nhật các sự kiện theo tháng/năm để quảng bá sản phẩm và ưu đãi mới.',
+        updatedAt: 'Cập nhật lúc',
+        cta: {
+            default: 'Xem chi tiết'
+        },
+        states: {
+            loading: 'Đang tải sự kiện...',
+            error: 'Không thể tải sự kiện. Vui lòng thử lại.',
+            empty: 'Hiện chưa có sự kiện mới.'
+        }
+    },
+    eventDetail: {
+        back: 'Quay lại sự kiện',
+        title: 'Thông tin sự kiện',
+        linksTitle: 'Liên kết',
+        states: {
+            loading: 'Đang tải bài viết...',
+            error: 'Không thể tải bài viết. Vui lòng thử lại.'
         }
     }
 }

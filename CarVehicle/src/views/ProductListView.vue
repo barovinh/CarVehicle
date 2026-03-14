@@ -300,7 +300,7 @@ const pageList = computed(() => {
   padding: 32px 36px;
   border-radius: 20px;
   background: linear-gradient(135deg, rgba(24, 34, 50, 0.9), rgba(9, 13, 19, 0.55));
-  border: 1px solid rgba(127, 162, 214, 0.25);
+  border: 1px solid var(--border-2);
   box-shadow: 0 18px 45px rgba(4, 8, 14, 0.5);
 }
 
@@ -312,7 +312,7 @@ const pageList = computed(() => {
 .products-header-text .lead {
   margin: 0;
   font-size: 15px;
-  color: #c2d1ea;
+  color: var(--muted);
 }
 
 .products-header-stats {
@@ -330,7 +330,7 @@ const pageList = computed(() => {
 .hstat-num {
   font-size: 32px;
   font-weight: 700;
-  color: #00d4ff;
+  color: var(--accent);
   line-height: 1;
 }
 
@@ -338,7 +338,7 @@ const pageList = computed(() => {
   font-size: 11px;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: #7fa2d6;
+  color: var(--subtle);
 }
 
 /* ---- GRID ---- */
@@ -351,15 +351,15 @@ const pageList = computed(() => {
 }
 
 .products-layout.has-detail {
-  grid-template-columns: 220px 1fr 260px;
+  grid-template-columns: 220px 1fr 280px;
 }
 
 /* ---- SIDEBAR ---- */
 .filter-sidebar {
   position: sticky;
   top: 100px;
-  background: rgba(12, 18, 26, 0.7);
-  border: 1px solid rgba(127, 162, 214, 0.18);
+  background: var(--panel);
+  border: 1px solid var(--border);
   border-radius: 18px;
   padding: 24px 20px;
   display: flex;
@@ -376,7 +376,7 @@ const pageList = computed(() => {
   font-size: 13px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: #7fa2d6;
+  color: var(--subtle);
 }
 
 .filter-group {
@@ -387,20 +387,20 @@ const pageList = computed(() => {
 
 .filter-label {
   font-size: 13px;
-  color: #c2d1ea;
+  color: var(--muted);
 }
 
 .price-val {
-  color: #00d4ff;
+  color: var(--accent);
 }
 
 .filter-input,
 .filter-select {
   padding: 9px 12px;
   border-radius: 10px;
-  border: 1px solid rgba(127, 162, 214, 0.28);
-  background: rgba(15, 22, 32, 0.8);
-  color: #e9f1ff;
+  border: 1px solid var(--border-2);
+  background: var(--panel-strong);
+  color: var(--text);
   font-size: 14px;
   font-family: inherit;
   outline: none;
@@ -409,12 +409,12 @@ const pageList = computed(() => {
 
 .filter-input:focus,
 .filter-select:focus {
-  border-color: #1f6feb;
+  border-color: var(--primary);
 }
 
 .filter-range {
   width: 100%;
-  accent-color: #1f6feb;
+  accent-color: var(--primary);
   cursor: pointer;
 }
 
@@ -422,15 +422,15 @@ const pageList = computed(() => {
   display: flex;
   justify-content: space-between;
   font-size: 11px;
-  color: #7fa2d6;
+  color: var(--subtle);
 }
 
 .filter-reset {
   padding: 9px;
   border-radius: 999px;
-  border: 1px solid rgba(127, 162, 214, 0.35);
+  border: 1px solid var(--border-2);
   background: transparent;
-  color: #e9f1ff;
+  color: var(--text);
   font-size: 13px;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -440,9 +440,9 @@ const pageList = computed(() => {
 }
 
 .filter-reset:hover {
-  background: #1f6feb;
-  border-color: #1f6feb;
-  color: #0a0f14;
+  background: var(--primary);
+  border-color: var(--primary);
+  color: var(--primary-contrast);
 }
 
 /* ---- CONTENT ---- */
@@ -457,7 +457,7 @@ const pageList = computed(() => {
 }
 
 .state-msg {
-  color: #7fa2d6;
+  color: var(--subtle);
   font-size: 15px;
 }
 
@@ -476,9 +476,9 @@ const pageList = computed(() => {
   height: 38px;
   padding: 0 10px;
   border-radius: 10px;
-  border: 1px solid rgba(127, 162, 214, 0.28);
-  background: rgba(15, 22, 32, 0.8);
-  color: #e9f1ff;
+  border: 1px solid var(--border-2);
+  background: var(--panel-strong);
+  color: var(--text);
   font-size: 14px;
   font-family: inherit;
   cursor: pointer;
@@ -486,13 +486,13 @@ const pageList = computed(() => {
 }
 
 .page-btn:hover:not(:disabled) {
-  border-color: #1f6feb;
+  border-color: var(--primary);
   background: rgba(31, 111, 235, 0.15);
 }
 
 .page-btn.active {
-  background: #1f6feb;
-  border-color: #1f6feb;
+  background: var(--primary);
+  border-color: var(--primary);
   color: #fff;
   font-weight: 700;
 }
@@ -503,7 +503,7 @@ const pageList = computed(() => {
 }
 
 .page-ellipsis {
-  color: #7fa2d6;
+  color: var(--subtle);
   font-size: 16px;
   padding: 0 4px;
 }
@@ -512,9 +512,10 @@ const pageList = computed(() => {
 .detail-sidebar {
   position: sticky;
   top: 100px;
-  background: rgba(12, 18, 26, 0.7);
-  border: 1px solid rgba(127, 162, 214, 0.18);
+  background: var(--panel);
+  border: 1px solid var(--border);
   border-radius: 18px;
+  box-sizing: border-box;
   padding: 24px 20px;
   display: flex;
   flex-direction: column;
@@ -551,14 +552,14 @@ const pageList = computed(() => {
   font-size: 11px;
   letter-spacing: 0.22em;
   text-transform: uppercase;
-  color: #7fa2d6;
+  color: var(--subtle);
 }
 
 .detail-close {
   background: none;
-  border: 1px solid rgba(127, 162, 214, 0.28);
+  border: 1px solid var(--border-2);
   border-radius: 8px;
-  color: #e9f1ff;
+  color: var(--text);
   width: 28px;
   height: 28px;
   cursor: pointer;
@@ -589,20 +590,20 @@ const pageList = computed(() => {
 .detail-version {
   margin: 0;
   font-size: 13px;
-  color: #c2d1ea;
+  color: var(--muted);
 }
 
 .detail-price {
   margin: 0;
   font-size: 20px;
   font-weight: 700;
-  color: #00d4ff;
+  color: var(--accent);
 }
 
 .detail-desc {
   margin: 0;
   font-size: 13px;
-  color: #c2d1ea;
+  color: var(--muted);
   line-height: 1.6;
 }
 
@@ -623,23 +624,23 @@ const pageList = computed(() => {
 }
 
 .spec-key {
-  color: #7fa2d6;
+  color: var(--subtle);
 }
 
 .spec-val {
-  color: #e9f1ff;
+  color: var(--text);
   font-weight: 600;
 }
 
 .spec-val.price {
-  color: #00d4ff;
+  color: var(--accent);
 }
 
 .detail-cta {
   padding: 11px;
   border-radius: 999px;
   border: none;
-  background: #1f6feb;
+  background: var(--primary);
   color: #fff;
   font-size: 13px;
   letter-spacing: 0.1em;
@@ -656,8 +657,8 @@ const pageList = computed(() => {
 
 .detail-cta-outline {
   background: transparent;
-  border: 1px solid rgba(127, 162, 214, 0.4);
-  color: #e9f1ff;
+  border: 1px solid var(--border-3);
+  color: var(--text);
   text-decoration: none;
   display: block;
   text-align: center;
@@ -665,7 +666,7 @@ const pageList = computed(() => {
 
 .detail-cta-outline:hover {
   opacity: 1;
-  border-color: #1f6feb;
+  border-color: var(--primary);
   background: rgba(31, 111, 235, 0.12);
 }
 

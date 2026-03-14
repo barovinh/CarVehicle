@@ -126,8 +126,8 @@ function handleSubmit() {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  background: rgba(12, 18, 26, 0.7);
-  border: 1px solid rgba(127, 162, 214, 0.18);
+  background: var(--panel);
+  border: 1px solid var(--border);
   border-radius: 18px;
   padding: 28px 24px;
 }
@@ -141,16 +141,16 @@ function handleSubmit() {
 .field label {
   font-size: 13px;
   letter-spacing: 0.06em;
-  color: #c2d1ea;
+  color: var(--muted);
 }
 
 .field input,
 .field textarea {
   padding: 10px 14px;
   border-radius: 10px;
-  border: 1px solid rgba(127, 162, 214, 0.28);
-  background: rgba(15, 22, 32, 0.8);
-  color: #e9f1ff;
+  border: 1px solid var(--border-2);
+  background: var(--panel-strong);
+  color: var(--text);
   font-size: 14px;
   font-family: inherit;
   outline: none;
@@ -160,14 +160,14 @@ function handleSubmit() {
 
 .field input:focus,
 .field textarea:focus {
-  border-color: #1f6feb;
+  border-color: var(--primary);
 }
 
 .btn-submit {
   padding: 12px 28px;
   border-radius: 999px;
   border: none;
-  background: #1f6feb;
+  background: var(--primary);
   color: #fff;
   font-size: 14px;
   letter-spacing: 0.1em;
@@ -184,14 +184,14 @@ function handleSubmit() {
 
 .form-success {
   font-size: 14px;
-  color: #00d4ff;
+  color: var(--accent);
   margin: 0;
 }
 
 /* ---- INFO ---- */
 .info-card {
-  background: rgba(12, 18, 26, 0.7);
-  border: 1px solid rgba(127, 162, 214, 0.18);
+  background: var(--panel);
+  border: 1px solid var(--border);
   border-radius: 18px;
   padding: 22px 20px;
   display: flex;
@@ -204,7 +204,7 @@ function handleSubmit() {
   align-items: flex-start;
   gap: 12px;
   font-size: 15px;
-  color: #c2d1ea;
+  color: var(--muted);
 }
 
 .info-row p {
@@ -222,14 +222,14 @@ function handleSubmit() {
   font-size: 14px;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: #7fa2d6;
+  color: var(--subtle);
 }
 
 /* ---- MAP ---- */
 .map-wrap {
   border-radius: 18px;
   overflow: hidden;
-  border: 1px solid rgba(127, 162, 214, 0.18);
+  border: 1px solid var(--border);
   height: 220px;
 }
 
