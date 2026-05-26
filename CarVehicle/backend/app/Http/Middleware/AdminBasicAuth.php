@@ -10,7 +10,7 @@ class AdminBasicAuth
 {
     public function handle(Request $request, Closure $next): Response
     {
-        $expectedUser = (string) env('ADMIN_USERNAME', 'admin_giabao');
+        $expectedUser = (string) env('ADMIN_USERNAME', 'baoluu0711');
         $expectedPass = (string) env('ADMIN_PASSWORD', 'baoluu0711');
 
         $user = (string) $request->getUser();
