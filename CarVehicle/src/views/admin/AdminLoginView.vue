@@ -1,11 +1,12 @@
 <script setup>
 import { computed, ref } from 'vue'
-import { useRouter } from 'vue-router'
+import { useRoute, useRouter } from 'vue-router'
 import { setAdminCredentials } from '../../services/adminAuth'
 
 const router = useRouter()
+const route = useRoute()
 
-const username = ref('admin_giabao')
+const username = ref('baoluu0711')
 const password = ref('')
 const loading = ref(false)
 const error = ref('')
@@ -34,7 +35,8 @@ async function onSubmit() {
     }
 
     setAdminCredentials(username.value.trim(), password.value)
-    router.replace('/quanly')
+    const redirect = typeof route.query.redirect === 'string' ? route.query.redirect : '/quanly'
+    router.replace(redirect)
   } catch (e) {
     error.value = e?.message || 'Đăng nhập thất bại'
   } finally {

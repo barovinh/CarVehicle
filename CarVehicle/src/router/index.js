@@ -54,6 +54,15 @@ const router = createRouter({
       component: () => import('../views/admin/AdminDashboardView.vue'),
       meta: { requiresAdmin: true },
     },
+    {
+      path: '/notfound',
+      name: 'not-found',
+      component: () => import('../views/NotFoundView.vue'),
+    },
+    {
+      path: '/:pathMatch(.*)*',
+      redirect: '/notfound',
+    },
   ],
 })
 
