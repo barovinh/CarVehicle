@@ -10,10 +10,10 @@ WORKDIR /app
 
 COPY . .
 
+WORKDIR /app/backend
+
 RUN npm install --legacy-peer-deps --force
 RUN npm run build
-
-WORKDIR /app/backend
 
 RUN composer install --no-dev --optimize-autoloader
 
