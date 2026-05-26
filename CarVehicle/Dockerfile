@@ -13,6 +13,7 @@ COPY . .
 RUN npm install --legacy-peer-deps --force
 
 WORKDIR /app/backend
+RUN npm install --legacy-peer-deps --force
 RUN npm run build
 
 RUN composer install --no-dev --optimize-autoloader
