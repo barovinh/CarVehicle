@@ -12,10 +12,18 @@ return Application::configure(basePath: dirname(__DIR__))
         health: '/up',
     )
     ->withMiddleware(function (Middleware $middleware): void {
+
+        // Trust proxy của Render / Cloudflare / Nginx
+        $middleware->trustProxies(
+            at: '*'
+        );
+
+        // Middleware alias
         $middleware->alias([
             'admin.basic' => \App\Http\Middleware\AdminBasicAuth::class,
         ]);
     })
     ->withExceptions(function (Exceptions $exceptions): void {
         //
-    })->create();
+    })
+    ->create();
