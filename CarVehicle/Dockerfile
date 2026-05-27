@@ -30,11 +30,11 @@ WORKDIR /app/be
 
 RUN composer install --no-dev --optimize-autoloader
 
-RUN php artisan optimize:clear || true
-
 RUN mkdir -p database
 
 RUN touch database/database.sqlite
+
+RUN php artisan optimize:clear || true
 
 RUN chmod -R 777 storage bootstrap/cache database
 
@@ -45,5 +45,12 @@ RUN php artisan key:generate --force
 RUN php artisan migrate --force || true
 
 EXPOSE 10000
+
+WORKDIR /app/fe
+
+RUN npm run build
+
+RUN cp -r dist/* /app/be/public/
+
 
 CMD ["php", "artisan", "serve", "--host=0.0.0.0", "--port=10000"]
