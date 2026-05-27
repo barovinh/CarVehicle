@@ -30,6 +30,8 @@ WORKDIR /app/be
 
 RUN composer install --no-dev --optimize-autoloader
 
+RUN php artisan optimize:clear || true
+
 RUN mkdir -p database
 
 RUN touch database/database.sqlite
