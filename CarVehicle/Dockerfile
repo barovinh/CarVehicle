@@ -17,7 +17,7 @@ COPY . .
 # =========================
 # FRONTEND BUILD
 # =========================
-WORKDIR /app
+WORKDIR /app/fe
 
 RUN npm install --legacy-peer-deps --force
 
@@ -26,7 +26,7 @@ RUN npm run build
 # =========================
 # LARAVEL
 # =========================
-WORKDIR /app/backend
+WORKDIR /app/be
 
 RUN composer install --no-dev --optimize-autoloader
 

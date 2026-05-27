@@ -4,7 +4,7 @@ import vue from '@vitejs/plugin-vue';
 import tailwindcss from '@tailwindcss/vite';
 
 export default defineConfig({
-    publicDir: '../public',
+    publicDir: '../fe/public',
     plugins: [
         laravel({
             input: ['resources/css/app.css', 'resources/js/app.js'],

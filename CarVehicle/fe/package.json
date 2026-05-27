@@ -1,4 +1,11 @@
 {
+  "$schema": "https://www.schemastore.org/package.json",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "vite build",
+    "dev": "vite"
+  },
   "dependencies": {
     "pinia": "^3.0.4",
     "three": "^0.183.2",
