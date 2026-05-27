@@ -17,9 +17,7 @@ COPY . .
 # =========================
 # FRONTEND BUILD
 # =========================
-WORKDIR /app/backend
-
-RUN rm -rf node_modules package-lock.json
+WORKDIR /app
 
 RUN npm install --legacy-peer-deps --force
 
@@ -28,6 +26,8 @@ RUN npm run build
 # =========================
 # LARAVEL
 # =========================
+WORKDIR /app/backend
+
 RUN composer install --no-dev --optimize-autoloader
 
 RUN mkdir -p database
